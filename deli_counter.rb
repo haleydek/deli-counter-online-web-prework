@@ -16,11 +16,11 @@ end
 
 def take_a_number(deli_line, new_name)
   if deli_line == []
-    deli_line << new_name
     puts "Welcome, #{new_name}.You are number 1 in line."
+    deli_line << new_name
   else
     deli_line << new_name
-    line_num = deli_line.index(new_name)
+    line_num = deli_line.index(new_name) + 1
     puts "Welcome, #{new_name}. You are number #{line_num} in line."
   end
 end
