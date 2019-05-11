@@ -24,3 +24,7 @@ def take_a_number(deli_line, new_name)
     puts "Welcome, #{new_name}. You are number #{line_num} in line."
   end
 end
+
+def now_serving(deli_line)
+  if deli_line == []
+    puts 
